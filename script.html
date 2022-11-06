@@ -1,17 +1,18 @@
 <html>
 	<head>
 		<title>
-			my CGI server
+			javascript lab
 		</title>
 	</head>
 	<body bgcolor="000FF00#" style="color:black">
-<br>screen<br>
+<br>output<br>
 		<TextArea ID="input2"  style="color:black" rows="8" cols="50">
 
 		</TextArea>
 <br>code<br>
 		<TextArea ID="input1"  style="color:black" rows="8" cols="50">
-print('hello world\n');
+a="hello_world";
+print(a);
 		</TextArea>
 		<p>
 		<button onclick="shelles()" style="color:black">
@@ -19,19 +20,19 @@ print('hello world\n');
 		</button>
 		</p>
 		<script>
-			hh="";
-			function print(s){
-				hh=hh+s+"\n";
+			screen012345678901234567890="";
+			function print(s012345678901234567890){
+				screen012345678901234567890=screen012345678901234567890+s012345678901234567890+"\n";
 			}
-			function eeval(){
-				const b = document.getElementById('input1');				
-				const c=document.getElementById('input2');
-				eval(b.value);				
-				c.value=hh;
+			function eeval012345678901234567890(){
+				const b012345678901234567890 = document.getElementById('input1');				
+				const c012345678901234567890=document.getElementById('input2');
+				eval(b012345678901234567890.value);				
+				c012345678901234567890.value=screen012345678901234567890;
 			}
 			function shelles(){
-				hh="";
-				eeval();
+				screen012345678901234567890="";
+				eeval012345678901234567890();
 			}
 		</script>	
 	</body>
