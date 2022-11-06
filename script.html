@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>
+			my CGI server
+		</title>
+	</head>
+	<body bgcolor="000FF00#" style="color:black">
+<br>screen<br>
+		<TextArea ID="input2"  style="color:black" rows="8" cols="50">
+
+		</TextArea>
+<br>code<br>
+		<TextArea ID="input1"  style="color:black" rows="8" cols="50">
+print('hello world\n');
+		</TextArea>
+		<p>
+		<button onclick="shelles()" style="color:black">
+			run
+		</button>
+		</p>
+		<script>
+			hh="";
+			function print(s){
+				hh=hh+s+"\n";
+			}
+			function eeval(){
+				const b = document.getElementById('input1');				
+				const c=document.getElementById('input2');
+				eval(b.value);				
+				c.value=hh;
+			}
+			function shelles(){
+				hh="";
+				eeval();
+			}
+		</script>	
+	</body>
+</html>
