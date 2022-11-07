@@ -11,10 +11,10 @@
 		</TextArea>
 <br>code<br>
 		<TextArea ID="input1"  style="color:black" rows="8" cols="50">
-function add(){
-return 10+10;
+function add(a,b){
+return a+b;
 }
-print(STR(add()));
+print(STR(add(val("10.9"),val("10.01"))));
 		
 		</TextArea>
 		<p>
@@ -24,6 +24,9 @@ print(STR(add()));
 		</p>
 		<script>
 			screen012345678901234567890="";
+			function val(s012345678901234567890){
+				return parseFloat(s012345678901234567890);
+				}
 			function STR(s012345678901234567890){
 				return s012345678901234567890.toString();
 				}
