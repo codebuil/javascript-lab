@@ -14,7 +14,7 @@
 function add(a,b){
 return a+b;
 }
-print(STR(LEN("xxxxxxxx")));
+print(STR(instr("xxxxxaxxx","ax")));
 		
 		</TextArea>
 		<p>
@@ -24,11 +24,12 @@ print(STR(LEN("xxxxxxxx")));
 		</p>
 		<script>
 			screen012345678901234567890="";
+			function instr(s012345678901234567890,ss012345678901234567890){
+				return s012345678901234567890.indexOf(ss012345678901234567890);
+				}
 			function LEN(s012345678901234567890){
 				return s012345678901234567890.length;
-			
 				}
-					
 			function INT(s012345678901234567890){
 				return Math.floor(s012345678901234567890);
 				}
