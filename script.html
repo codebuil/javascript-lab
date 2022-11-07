@@ -14,7 +14,7 @@
 function add(){
 return 10+10;
 }
-print(calls(add()));
+print(STR(add()));
 		
 		</TextArea>
 		<p>
@@ -24,6 +24,9 @@ print(calls(add()));
 		</p>
 		<script>
 			screen012345678901234567890="";
+			function STR(s012345678901234567890){
+				return s012345678901234567890.toString();
+				}
 			function calls(s012345678901234567890){
 				return eval(s012345678901234567890.toString());
 				
