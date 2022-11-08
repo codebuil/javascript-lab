@@ -14,7 +14,8 @@
 function add(a,b){
 return a+b;
 }
-print(trim("         hello world          ")+"<");
+let n=0;
+for(n=0;n<12;n++)print(STR(INT(rnd()*50)));
 		
 		</TextArea>
 		<p>
@@ -24,6 +25,9 @@ print(trim("         hello world          ")+"<");
 		</p>
 		<script>
 			screen012345678901234567890="";
+			function rnd(){
+			return Math.random();
+			}
 			function trim(s012345678901234567890){
 			return s012345678901234567890.trim();
 			}
