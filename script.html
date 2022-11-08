@@ -14,7 +14,7 @@
 function add(a,b){
 return a+b;
 }
-print(ltrim("         hello world          ")+"<");
+print(rtrim("         hello world          ")+"<");
 		
 		</TextArea>
 		<p>
@@ -24,6 +24,9 @@ print(ltrim("         hello world          ")+"<");
 		</p>
 		<script>
 			screen012345678901234567890="";
+			function rtrim(s012345678901234567890){
+			return s012345678901234567890.trimEnd();
+			}
 			function ltrim(s012345678901234567890){
 			return s012345678901234567890.trimStart();
 			}
